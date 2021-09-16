@@ -15,8 +15,8 @@ namespace buttons
     {
         [Command("button")]
         public async Task Button() {
-            var builder = new ComponentBuilder().WithButton("Ewa", customId: "id_1", ButtonStyle.Primary, row: 0);
-            await Context.Channel.SendMessageAsync("UwU", component: builder.Build());
+            var builder = new ComponentBuilder().WithButton("Hello", customId: "id_1", ButtonStyle.Primary, row: 0);
+            await Context.Channel.SendMessageAsync("Welcome", component: builder.Build());
 
         }
     }
