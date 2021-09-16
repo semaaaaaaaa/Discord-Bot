@@ -34,7 +34,7 @@ namespace DiscordBot
                 .BuildServiceProvider();
 
             
-            string token = "ODczMjY3NDAyMDA2MjE2Nzg2.YQ17pQ.lSsPOVpigc-_H-M1p-fRvauf_pw";
+            string token = "token here dude";
             
             _client.Log += _client_Log;
                 
