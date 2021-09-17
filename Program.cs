@@ -7,7 +7,7 @@ using Discord.WebSocket;
 using Microsoft.Extensions.DependencyInjection;
 
 
-namespace DiscordBot
+namespace Program
 {
     public class Program : ModuleBase<SocketCommandContext>
     {
