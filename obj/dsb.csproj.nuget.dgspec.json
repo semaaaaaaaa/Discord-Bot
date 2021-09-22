@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SCC\\Desktop\\New folder\\Projects\\csharp\\dsb\\dsb.csproj": {}
+    "C:\\Users\\SCC\\Desktop\\New folder\\Projects\\csharp\\secdcbot\\dsb.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SCC\\Desktop\\New folder\\Projects\\csharp\\dsb\\dsb.csproj": {
+    "C:\\Users\\SCC\\Desktop\\New folder\\Projects\\csharp\\secdcbot\\dsb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SCC\\Desktop\\New folder\\Projects\\csharp\\dsb\\dsb.csproj",
+        "projectUniqueName": "C:\\Users\\SCC\\Desktop\\New folder\\Projects\\csharp\\secdcbot\\dsb.csproj",
         "projectName": "dsb",
-        "projectPath": "C:\\Users\\SCC\\Desktop\\New folder\\Projects\\csharp\\dsb\\dsb.csproj",
+        "projectPath": "C:\\Users\\SCC\\Desktop\\New folder\\Projects\\csharp\\secdcbot\\dsb.csproj",
         "packagesPath": "C:\\Users\\SCC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SCC\\Desktop\\New folder\\Projects\\csharp\\dsb\\obj\\",
+        "outputPath": "C:\\Users\\SCC\\Desktop\\New folder\\Projects\\csharp\\secdcbot\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

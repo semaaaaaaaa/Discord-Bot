@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AdfkKjV3hOKylFoY9STXMqAYHdEYLrzVNsZjzQx1+wiyd9EXytWHVW+jaS5VML2eWTOA5A8VPfLhC1IZxvlmtQ==",
+  "dgSpecHash": "GlQ5gjrIPd03kO0H8/Q0enhEtMgeYgbZ01CH9E4tUS4X35i31ifhBCGvEAuQzV7sy3Lxgd4FWsggibiUHuJtYg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\SCC\\Desktop\\New folder\\Projects\\csharp\\dsb\\dsb.csproj",
+  "projectFilePath": "C:\\Users\\SCC\\Desktop\\New folder\\Projects\\csharp\\secdcbot\\dsb.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SCC\\.nuget\\packages\\discord.net\\2.4.0\\discord.net.2.4.0.nupkg.sha512",
     "C:\\Users\\SCC\\.nuget\\packages\\discord.net.commands\\2.4.0\\discord.net.commands.2.4.0.nupkg.sha512",
