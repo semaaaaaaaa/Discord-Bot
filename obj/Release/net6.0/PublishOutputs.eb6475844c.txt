@@ -1,0 +1,16 @@
+C:\Users\SCC\Desktop\New folder\Projects\csharp\secdcbot\bin\Release\net6.0\publish\dsb.exe
+C:\Users\SCC\Desktop\New folder\Projects\csharp\secdcbot\bin\Release\net6.0\publish\dsb.dll
+C:\Users\SCC\Desktop\New folder\Projects\csharp\secdcbot\bin\Release\net6.0\publish\dsb.deps.json
+C:\Users\SCC\Desktop\New folder\Projects\csharp\secdcbot\bin\Release\net6.0\publish\dsb.runtimeconfig.json
+C:\Users\SCC\Desktop\New folder\Projects\csharp\secdcbot\bin\Release\net6.0\publish\dsb.pdb
+C:\Users\SCC\Desktop\New folder\Projects\csharp\secdcbot\bin\Release\net6.0\publish\Discord.Net.Commands.dll
+C:\Users\SCC\Desktop\New folder\Projects\csharp\secdcbot\bin\Release\net6.0\publish\Discord.Net.Core.dll
+C:\Users\SCC\Desktop\New folder\Projects\csharp\secdcbot\bin\Release\net6.0\publish\Discord.Net.Rest.dll
+C:\Users\SCC\Desktop\New folder\Projects\csharp\secdcbot\bin\Release\net6.0\publish\Discord.Net.Webhook.dll
+C:\Users\SCC\Desktop\New folder\Projects\csharp\secdcbot\bin\Release\net6.0\publish\Discord.Net.WebSocket.dll
+C:\Users\SCC\Desktop\New folder\Projects\csharp\secdcbot\bin\Release\net6.0\publish\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\SCC\Desktop\New folder\Projects\csharp\secdcbot\bin\Release\net6.0\publish\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\SCC\Desktop\New folder\Projects\csharp\secdcbot\bin\Release\net6.0\publish\Newtonsoft.Json.dll
+C:\Users\SCC\Desktop\New folder\Projects\csharp\secdcbot\bin\Release\net6.0\publish\System.Interactive.Async.dll
+C:\Users\SCC\Desktop\New folder\Projects\csharp\secdcbot\bin\Release\net6.0\publish\System.Linq.Async.dll
+C:\Users\SCC\Desktop\New folder\Projects\csharp\secdcbot\bin\Release\net6.0\publish\System.Runtime.CompilerServices.Unsafe.dll
