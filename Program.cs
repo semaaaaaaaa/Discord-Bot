@@ -34,7 +34,7 @@ namespace Program
                 .BuildServiceProvider();
 
             
-            string token = "ODA2NDI3MTM5NTgyMzI4ODQy.YBpRzA.BHDxNECDEkvcgK6189d3zqg31bM";
+            string token = "tokenhere";
             
             _client.Log += _client_Log;
                 
