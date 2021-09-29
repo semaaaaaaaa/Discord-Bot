@@ -58,7 +58,23 @@
             },
             "Discord.Net.Labs": {
               "target": "Package",
-              "version": "[3.0.2, )"
+              "version": "[3.1.1, )"
+            },
+            "Discord.Net.Labs.Commands": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "Discord.Net.Labs.Core": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Discord.Net.Labs.Rest": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Discord.Net.Labs.WebSocket": {
+              "target": "Package",
+              "version": "[3.1.1, )"
             },
             "Discord.Net.Rest": {
               "target": "Package",

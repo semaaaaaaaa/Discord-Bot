@@ -4,7 +4,7 @@
     <TargetFramework>net6.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Discord.Net.Labs" Version="3.0.2"/>
+    <PackageReference Include="Discord.Net.Labs" Version="3.1.1"/>
     <PackageReference Include="Discord.Net" Version="2.4.0"/>
     <PackageReference Include="Discord.Net.Rest" Version="2.4.0"/>
     <PackageReference Include="Discord.Net.Commands" Version="2.4.0"/>
@@ -12,5 +12,9 @@
     <PackageReference Include="Discord.Net.WebSocket" Version="2.4.0"/>
     <PackageReference Include="Discord.Net.Webhook" Version="2.4.0"/>
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0-preview.7.21377.19"/>
+    <PackageReference Include="Discord.Net.Labs.Commands" Version="3.0.1"/>
+    <PackageReference Include="Discord.Net.Labs.WebSocket" Version="3.1.1"/>
+    <PackageReference Include="Discord.Net.Labs.Rest" Version="3.1.1"/>
+    <PackageReference Include="Discord.Net.Labs.Core" Version="3.1.1"/>
   </ItemGroup>
 </Project>
