@@ -16,8 +16,7 @@ namespace calc
         [Command("calc")]
         public async Task Calc() {
             var builder = new ComponentBuilder().WithButton("Hello!", customId: "id_1", ButtonStyle.Secondary, row: 0);
-            var builder2 = new ComponentBuilder().WithButton("Hello!", customId: "id_1", ButtonStyle.Secondary, row: 0);
-await Context.Channel.SendMessageAsync("Test buttons!", component: builder.Build());
+            await Context.Channel.SendMessageAsync("Test buttons!", component: builder.Build());
 
         }
     }
