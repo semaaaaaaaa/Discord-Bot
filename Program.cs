@@ -34,7 +34,7 @@ namespace Program
                 .BuildServiceProvider();
 
             
-            string token = "tokenhere";
+            string token = "token";
             
             _client.Log += _client_Log;
                 
@@ -56,7 +56,6 @@ namespace Program
         public async Task RegisterCommandsAsync()
         {
             _client.MessageReceived += HandleCommandAsync;
-            _client.MessageReceived += NumbersCheck;
             await _commands.AddModulesAsync(Assembly.GetEntryAssembly(), _services);
 
         }
@@ -82,42 +81,7 @@ namespace Program
 
 
         }
-        public static int i { get; set; }
-        public static bool Active { get; set; }
-        public static ulong AuthorID { get; set; }
-        public static ulong channelId { get; set; }
-        public async Task NumbersCheck(SocketMessage message)
-        {
-            if (Active)
-            {
-
-
-                try
-                {
-
-
-                    if (message.Channel.Id == 820926674656559134)
-                    {
-                        var number = int.Parse(message.Content);
-                        var authorID = message.Author.Id;
-                        if (number != i + 1 || AuthorID == authorID)
-                        {
-                            await message.DeleteAsync();
-
-                        }
-                        else
-                        {
-                            i = number;
-                            AuthorID = authorID;
-                        }
-                    }
-                }
-                catch
-                {
-                    await message.DeleteAsync();
-                }
-            }
-        }
+        
 
     }
 }

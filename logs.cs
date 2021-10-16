@@ -30,9 +30,22 @@ namespace Logs
             Context.Client.UserUnbanned += Useru;
             Context.Client.MessageReceived += Links;    
             Context.Client.ChannelUpdated += Channelu; 
+            Context.Client.MessageDeleted += MessageD;
             
         }
-        
+        public async Task MessageD(Cacheable<IMessage, ulong> msg, Cacheable<IMessageChannel, ulong> channel) {
+            ulong id = Context.Channel.Id;
+            var channel1 = Context.Client.GetChannel(id) as IMessageChannel;
+            
+            ulong secid = msg.Id;
+            EmbedBuilder emb = new EmbedBuilder();
+            emb.WithTitle($"A message deleted!");
+            emb.WithDescription(msg.Value.Content);
+            emb.WithColor(Color.DarkRed);
+            emb.WithFooter(footer => footer.Text = $"Id · {secid}");
+            emb.WithCurrentTimestamp();
+            await channel1.SendMessageAsync(embed: emb.Build());
+        }
         public async Task Channelu(SocketChannel channel, SocketChannel channel2) {
             ulong id = Context.Channel.Id;
             ulong secid = channel.Id;
@@ -45,6 +58,7 @@ namespace Logs
             emb.WithCurrentTimestamp();
             await channel1.SendMessageAsync(embed: emb.Build());
         }
+        
         public async Task Useru(SocketUser user, SocketGuild guild) {
             ulong id = Context.Channel.Id;
             ulong secid = user.Id;
