@@ -37,6 +37,7 @@ namespace translate
         public async Task Translatethistext(string fromlang,string tolang, [Remainder] string message)
         {
             
+            
             Translate translate = new Translate();
             await ReplyAsync(translate.translateText(message, tolang, fromlang));
         }

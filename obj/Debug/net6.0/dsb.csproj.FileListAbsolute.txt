@@ -52,3 +52,4 @@ C:\Users\SCC\Desktop\New folder\Projects\csharp\secdcbot\obj\Debug\net6.0\dsb.dl
 C:\Users\SCC\Desktop\New folder\Projects\csharp\secdcbot\obj\Debug\net6.0\ref\dsb.dll
 C:\Users\SCC\Desktop\New folder\Projects\csharp\secdcbot\obj\Debug\net6.0\dsb.pdb
 C:\Users\SCC\Desktop\New folder\Projects\csharp\secdcbot\obj\Debug\net6.0\dsb.genruntimeconfig.cache
+C:\Users\SCC\Desktop\New folder\Projects\csharp\secdcbot\bin\Debug\net6.0\Octokit.dll

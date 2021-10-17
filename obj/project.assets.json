@@ -199,6 +199,15 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
+      "Octokit/0.50.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Octokit.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Octokit.dll": {}
+        }
+      },
       "System.Collections/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -702,6 +711,22 @@
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
         "newtonsoft.json.12.0.2.nupkg.sha512",
         "newtonsoft.json.nuspec"
+      ]
+    },
+    "Octokit/0.50.0": {
+      "sha512": "J5vqespSvjxIAAtjG1Tc6ghBqyfRgDJtKnk/ifi4N0hD/f3JbPwyEDRT+Eelu/bS4C4M6mu5gt1WJqar+fByzg==",
+      "type": "package",
+      "path": "octokit/0.50.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net46/Octokit.dll",
+        "lib/net46/Octokit.xml",
+        "lib/netstandard2.0/Octokit.dll",
+        "lib/netstandard2.0/Octokit.xml",
+        "octokit.0.50.0.nupkg.sha512",
+        "octokit.nuspec",
+        "octokit.png"
       ]
     },
     "System.Collections/4.3.0": {
@@ -1748,7 +1773,8 @@
       "Discord.Net.Rest >= 2.4.0",
       "Discord.Net.WebSocket >= 2.4.0",
       "Discord.Net.Webhook >= 2.4.0",
-      "Microsoft.Extensions.DependencyInjection >= 6.0.0-preview.7.21377.19"
+      "Microsoft.Extensions.DependencyInjection >= 6.0.0-preview.7.21377.19",
+      "Octokit >= 0.50.0"
     ]
   },
   "packageFolders": {
@@ -1842,6 +1868,10 @@
           "Microsoft.Extensions.DependencyInjection": {
             "target": "Package",
             "version": "[6.0.0-preview.7.21377.19, )"
+          },
+          "Octokit": {
+            "target": "Package",
+            "version": "[0.50.0, )"
           }
         },
         "imports": [
