@@ -20,6 +20,7 @@ namespace ban
             if (user == null) {
                 await ReplyAsync("You should enter a name or ping specific user");
             }
+            if (reasonforban ==null) return;
             await Context.Guild.AddBanAsync(user,1, reasonforban);
             await Context.Channel.SendMessageAsync($"The user `{user}` banned for {reasonforban}");
         }

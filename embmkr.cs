@@ -14,17 +14,24 @@
         {
             [Command("emb")]
             [RequireUserPermission(GuildPermission.ManageMessages , ErrorMessage = "You don't have rights for this command!")]
-            public async Task Emb(string title, string symbol , [Remainder]string description = null)
-            {
-                symbol = "<";
-                var emb = new EmbedBuilder();
-                emb.WithAuthor(Context.User);
-                emb.WithTitle(title);
-                emb.WithDescription(description);
-                emb.WithColor(Color.LightGrey);
-                await ReplyAsync(embed: emb.Build());
+            public async Task Emb(string title = null, [Remainder] string description = null)
+        {
 
+            var emb = new EmbedBuilder();
+            emb.WithAuthor(Context.User);
+            if (title.Contains(">"))
+            {
+                emb.WithTitle($"{title.Replace(">", " ")}");
             }
+            else
+            {
+                emb.WithTitle(title);
+            }
+            emb.WithDescription($"{description}");
+            emb.WithColor(Color.Red);
+            await ReplyAsync("", false, emb.Build());
+
+        }
             
         }
     }

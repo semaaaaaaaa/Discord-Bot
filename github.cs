@@ -21,8 +21,7 @@ namespace github
             embed.ThumbnailUrl = $"{user.Url}";
             embed.WithDescription($"Following {user.Following} accounts \n Type: {user.Type} \n Public repos: {user.PublicRepos} \n User's location: {user.Location} \n Account created at {user.CreatedAt} ");
             embed.WithCurrentTimestamp();
-
-    await ReplyAsync(embed: embed.Build());
+            await ReplyAsync(embed: embed.Build());
         }
     }
 }

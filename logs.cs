@@ -16,7 +16,8 @@ namespace Logs
     {
         
         [Command("logs")]
-        [RequireUserPermission(Discord.GuildPermission.Administrator)]
+        [RequireUserPermission(Discord.GuildPermission.Administrator, ErrorMessage = "You don't have Administrator permission!")]
+        
         public async Task logsCreate() {
             
             await ReplyAsync($"Logs channel set as <#{Context.Channel.Id}>");
@@ -52,7 +53,7 @@ namespace Logs
             var channel1 = Context.Client.GetChannel(id) as IMessageChannel;
             EmbedBuilder emb = new EmbedBuilder();
             emb.WithTitle($"A channel updated!");
-            emb.WithDescription($"#{channel} **has changed to** #{channel2}");
+            emb.WithDescription($"#{channel} **has changed to** #{channel2} ");
             emb.WithColor(Color.DarkRed);
             emb.WithFooter(footer => footer.Text = $"Id · {secid}");
             emb.WithCurrentTimestamp();
@@ -147,7 +148,7 @@ namespace Logs
 
         } //done
         public async Task Userj(SocketGuildUser user) {
-            ulong id = 879797115876941894; 
+            ulong id = Context.Channel.Id; 
             var chnl = Context.Client.GetChannel(id) as IMessageChannel; 
             EmbedBuilder emb = new EmbedBuilder();
             emb.WithTitle(user.Nickname);

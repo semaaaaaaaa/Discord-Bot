@@ -53,3 +53,8 @@ C:\Users\SCC\Desktop\New folder\Projects\csharp\secdcbot\obj\Debug\net6.0\ref\ds
 C:\Users\SCC\Desktop\New folder\Projects\csharp\secdcbot\obj\Debug\net6.0\dsb.pdb
 C:\Users\SCC\Desktop\New folder\Projects\csharp\secdcbot\obj\Debug\net6.0\dsb.genruntimeconfig.cache
 C:\Users\SCC\Desktop\New folder\Projects\csharp\secdcbot\bin\Debug\net6.0\Octokit.dll
+C:\Users\SCC\Desktop\New folder\Projects\csharp\secdcbot\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\SCC\Desktop\New folder\Projects\csharp\secdcbot\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\SCC\Desktop\New folder\Projects\csharp\secdcbot\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\SCC\Desktop\New folder\Projects\csharp\secdcbot\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\SCC\Desktop\New folder\Projects\csharp\secdcbot\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll

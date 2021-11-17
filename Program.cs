@@ -24,7 +24,10 @@ namespace Program
         
         public async Task RunBotAsync()
         {
-            var config = new DiscordSocketConfig { MessageCacheSize = 100 };
+            var config = new DiscordSocketConfig { MessageCacheSize = 100,
+            AlwaysDownloadUsers = true,
+            LogLevel = LogSeverity.Verbose,
+            GatewayIntents = GatewayIntents.All };
             _client = new DiscordSocketClient(config);
             _commands = new CommandService();
 
@@ -33,8 +36,8 @@ namespace Program
                 .AddSingleton(_commands)
                 .BuildServiceProvider();
 
-            
-            string token = "ODczMjY3NDAyMDA2MjE2Nzg2.YQ17pQ.2OHfSXuu83fxFnhJobO3qqR-_P8";
+        
+            string token = "ODA2NDI3MTM5NTgyMzI4ODQy.YBpRzA.Gtbdm9ZAmg8Utbl10jiZmTto-ng";
             
             _client.Log += _client_Log;
                 
@@ -49,6 +52,7 @@ namespace Program
         
         private Task _client_Log(LogMessage arg)
         {
+            Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine(arg);
             return Task.CompletedTask;
         }
@@ -57,6 +61,7 @@ namespace Program
         {
             _client.MessageReceived += HandleCommandAsync;
             await _commands.AddModulesAsync(Assembly.GetEntryAssembly(), _services);
+            
 
         }
 
@@ -73,7 +78,9 @@ namespace Program
                 if (message.HasStringPrefix("$", ref argPos))
                 {
                     var result = await _commands.ExecuteAsync(context, argPos, _services);
+                    Console.ForegroundColor = ConsoleColor.Magenta;
                     if (!result.IsSuccess) Console.WriteLine(result.ErrorReason);
+                    Console.ForegroundColor = ConsoleColor.Green;
                     if (result.Error.Equals(CommandError.UnmetPrecondition)) await message.Channel.SendMessageAsync(result.ErrorReason);
                 }
             }

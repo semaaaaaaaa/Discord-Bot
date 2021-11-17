@@ -9,22 +9,23 @@ using Discord.WebSocket;
 using Discord.Net.WebSockets;
 using Discord;
 using System.Threading;
-namespace changecolorname
+
+namespace changecolornamehex
 {
-    public class changecolorname : ModuleBase<SocketCommandContext>
+    public class changecolornamehex : ModuleBase<SocketCommandContext>
     {
-        [Command("change")]
+        [Command("changehex")]
         [RequireUserPermission(Discord.GuildPermission.ManageRoles, ErrorMessage = "You need Manage Message permission for it")]
-        public async Task ChangeColor(ulong id, ulong color) {
+        public async Task ChangeColor(SocketRole role, string hex)
+        {
             
-            var role = Context.Guild.GetRole(id);
-    
-    await role.ModifyAsync(x =>
-{
-    x.Hoist = true;
-    x.Mentionable = true;    
-    
-    });
+            Color color = (Color)System.Drawing.ColorTranslator.FromHtml(hex);
+            
+            await role.ModifyAsync(x =>
+        {
+            x.Color = color;
+
+        });
         }
     }
 }
